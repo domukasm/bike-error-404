@@ -3,7 +3,7 @@
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 
 
-# SHERLOCK
+# BIKE
 
 _website design project_
 
