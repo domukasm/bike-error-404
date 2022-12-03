@@ -1,39 +1,4 @@
-:root{
-    --width:1000px;
-
-}
-
-.main-header{
-    display:inline-block;
-    width: var(--width);
-    margin-top: 40px;
-    margin-left: calc((100% - var(--width)) / 2 );
-}
-
-.logo {
-    height: 60px;
-    float: left;
-}
-
-.main-nav {
-    float: right;
-    margin-top: 30px;
-}
-
-.main-nav > .link {
-    display: inline;
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 17px;
-    font-family: sans-serif;
-    margin-left: 50px;
-    padding: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.main-nav > .link:first-child {
+/* .main-nav > .link:first-child {
     padding-left: 7px;
     margin-left: 0;
 }
@@ -42,7 +7,101 @@
 .main-nav > .link.active {
     display: inline;
     border-bottom: 4px solid;
-    border-image: linear-gradient(to right, #8216D8, #D12CE3) 1;
     padding-bottom: 2px;
     border-radius: 25px;
+} */
+/* border-image: linear-gradient(to right, #8216D8, #D12CE3) 1; */
+
+:root {
+    --width: 1300px;
+}
+
+.main-header {
+    display: inline-block;
+    width: var(--width);
+    margin-top: 40px;
+    margin-left: calc((100% - var(--width)) / 2);
+}
+
+.logo {
+    height: 60px;
+}
+
+.main-header > .main-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 150px; 
+    margin-top: -40px;
+}
+
+.main-nav > .link {
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    font-size: 18px;
+    transition: all 0.5s;
+    
+}
+
+.main-nav > .link:first-child {
+    margin-left: 0;
+}
+
+.main-nav > .link:hover,
+.main-nav > .link.active {
+    border-image: linear-gradient(to right, #8216D8, #D12CE3) 1;
+}
+
+.main-content {
+    display: inline-block;
+    width: var(--width);
+    margin-top: 40px;
+    margin-left: calc((100% - var(--width)) / 2);   
+}
+
+.right-column {
+    width: 35%;
+    float: right;
+}
+
+.main-title {
+    margin-top: 120px;
+    font-size: 40px;
+    font-family: system-ui;
+    margin-bottom: 20px
+}
+
+.main-title > span {
+    font-size: 40px
+}
+
+.description {
+    margin: 0;
+    font-size: 18px;
+    font-family: system-ui;
+    font-weight: 300;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 1.2em;
+    padding-left: 5em;
+    padding-right: 5em;
+    font-family: cursive;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #8051E0;
+    border-radius: 30px;
+    border: none;
+}
+
+.left-column {
+    margin-top: 80px;
+    width: 60%;
+    float: left
 }
